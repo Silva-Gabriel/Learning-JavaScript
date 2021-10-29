@@ -1,0 +1,8 @@
+const input = require('fs').readFileSync('stdin','utf-8')
+var valores = input.split('\n')
+let a = parseInt(valores[0])
+let b = parseInt(valores[1])
+let c = parseInt(valores[2])
+let d = parseInt(valores[3])
+var diferenca = ((a*b)-(c*d)) 
+console.log(`DIFERENCA = ${diferenca}`)
