@@ -1,63 +1,88 @@
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
 }
 
 body{
-    padding:10px;
-    background-image: linear-gradient(to right, #c8d1d0, #9bcacf, #6ac0da, #30b3eb, #00a1f9, #00a3fb, #00a4fd, #00a6ff, #28bcf8, #64ceee, #99dee6, #c9ebe8);
+    background:rgba(16,28,28);
     display: flex;
 }
 
 h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin:0;
+    padding:0;
+    text-align: center;
+    font-size: 60px;
     color:whitesmoke;
-    text-shadow: 2px 3px 3px rgba(0,0,0,.80);
-    margin-left:15px;
+    text-shadow: 4px 4px 4px rgba(0,0,0,.85);
+}
+
+#operacao{
+    display: inline;
+    position:relative;
+    top:0.3rem;
 }
 
 input{
-    width:7rem;
-    height: 1.5rem;
-    margin:8px;
-    border-radius: 10%;
+    width:9rem;
+    height: 2rem;
+    margin:9px;
+    font-size: 16px;
     display: inline;
+    box-shadow:2px 2px 2px rgba(0,0,0,.80);
 }
 
 .btn{
+    height: 2.2rem;
     background-color:whitesmoke;
     border:0;
-    box-shadow:3px 3px 3px rgba(0,0,0,.80);
-    width:75px;
-    font-size:16px;
+    box-shadow:2px 2px 2px rgba(0,0,0,.80);
+    width:65px;
+    font-size:20px;
+    position:relative;
+    top:0.2rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    height: 2rem;
-    border-radius: 10%;
+    border-radius: 4%;
     margin-top:25px;
 
 }
 
 .btn:hover{
-    background-color:rgb(32, 243, 43);
+    background-color:lightgray;
     box-shadow:6px 6px 6px rgba(0,0,0,.80);
-    transition:0.3s;
+    transition:0.5s;
+    cursor:pointer;
 }
 
 #resultado{
-    width:16rem;
-    padding:4px;
-    text-align: center;
-    background: rgb(217, 255, 0);
-    box-shadow: 4px 4px 4px rgba(0,0,0,.70);
-    margin-top:10px;
+    background:whitesmoke;
+    font-size: 20px;
+    box-shadow: 4px 4px 4px rgb(176, 203, 255);
     position:relative;
-    left:0.5rem;
+    top:1.2rem;
+    border-radius: 4%;
+    display: none;
 }
 
-#sum{
+#resultado:hover{
+    cursor:default;
+}
+
+.internal{
+    position: relative;
+    left:3.3rem;
+}
+
+#calculadora{
+    border-radius: 6%;
+    width:600px;
+    height: 160px;
+    box-shadow: 6px 6px 6px rgba(0,191,255);
+    background-image: linear-gradient(to right, #c8d1d0, #9bcacf, #6ac0da, #30b3eb, #00a1f9, #00a3fb, #00a4fd, #00a6ff, #28bcf8, #64ceee, #99dee6, #c9ebe8);
     display: block;
     margin-left: auto;
     margin-right: auto;
     position:relative;
-    top:20px;
+    top:10rem;
 }
