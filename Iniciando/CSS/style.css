@@ -35,7 +35,7 @@ input{
 
 .btn{
     height: 2.2rem;
-    background-color:whitesmoke;
+    background-color:rgba(168, 168, 168, 0.9);
     border:0;
     box-shadow:2px 2px 2px rgba(0,0,0,.80);
     width:65px;
@@ -49,9 +49,33 @@ input{
 }
 
 .btn:hover{
-    background-color:lightgray;
-    box-shadow:6px 6px 6px rgba(0,0,0,.80);
-    transition:0.5s;
+    background:rgba(136, 136, 136, 0.9);
+    box-shadow:4px 4px 4px rgba(0,0,0,.80);
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.btnReload{
+    width:7.5rem;
+    height: 3rem;
+    color:whitesmoke;
+    background:rgba(136, 136, 136, 0.9);
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 2px 2px 2px black;
+    position:relative;
+    top:130px;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    border-radius: 4%;
+    border:none;
+}
+
+.btnReload:hover{
+    background:rgba(109, 109, 109, 0.9);
+    box-shadow: 4px 4px 4px black;
+    transition:0.3s;
     cursor:pointer;
 }
 
@@ -60,7 +84,7 @@ input{
     font-size: 20px;
     box-shadow: 4px 4px 4px rgb(176, 203, 255);
     position:relative;
-    top:1.2rem;
+    bottom:1.7rem;
     border-radius: 4%;
     display: none;
 }
@@ -71,7 +95,7 @@ input{
 
 .internal{
     position: relative;
-    left:3.3rem;
+    left:3.5rem;
 }
 
 #calculadora{
