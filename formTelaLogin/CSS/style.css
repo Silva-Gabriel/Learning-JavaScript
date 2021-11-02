@@ -21,13 +21,17 @@ label{
     text-shadow: 1.5px 1.5px 1.5px black; 
 }
 
-#eye{
+#eye,#eyeSlash{
     color:rgba(0,0,0,.80);
     left: 85%;
     font-size:18px;
 }
 
-#eye:hover{
+#eye{
+    display: none;
+}
+
+#eye:hover,#eyeSlash:hover{
     cursor: pointer;
     color:royalblue;
     transition: 0.5s;

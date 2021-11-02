@@ -1,18 +1,39 @@
-//declarando globais
 var email = document.getElementById('email');
 var senha = document.getElementById('senha');
-var olho = document.getElementById('eye');
+var olhoAberto = document.getElementById('eye');
+var olhoFechado = document.getElementById('eyeSlash');
 
 
 function mostrarSenha()
 {
-    olho.addEventListener('click',() =>{
+    olhoFechado.addEventListener('click',() =>{
         if(senha.getAttribute('type') == 'password')
         {
             senha.setAttribute('type','text');
+            olhoAberto.style.display = 'inline';
+            olhoFechado.style.display = 'none';
         }
         else{
             senha.setAttribute('type','password');
+            olhoFechado.style.display = 'inline';
+            olhoAberto.style.display = 'none';
+        }
+    })
+}
+
+function ocultarSenha()
+{
+    olhoAberto.addEventListener('click',() =>{
+        if(senha.getAttribute('type') == 'password')
+        {
+            senha.setAttribute('type','text');
+            olhoAberto.style.display = 'inline';
+            olhoFechado.style.display = 'none';
+        }
+        else{
+            senha.setAttribute('type','password');
+            olhoFechado.style.display = 'inline';
+            olhoAberto.style.display = 'none';
         }
     })
 }
@@ -36,6 +57,12 @@ function borderInput()
     });
 }
 
+function cadastrar()
+{
+    
+}
+
 //Inicializando as funções
 borderInput();
 mostrarSenha();
+ocultarSenha();
